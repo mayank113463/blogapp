@@ -8,13 +8,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True   #(os.environ.get('DEBUG_VALUE') == 'True')
+# # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = True   #(os.environ.get('DEBUG_VALUE') == 'True')
 
 ALLOWED_HOSTS = ['mayankblogapp.herokuapp.com']
 
 
-# DEBUG = True 
+DEBUG = True
 # ALLOWED_HOSTS = []
 # SECRET_KEY = '4x79n=99v*^=(8(x0x%1oozy_6c$f+&fmct7sd4(#+ecw0tbka'
 
@@ -123,8 +123,8 @@ LOGIN_URL = 'login'
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'mayank113463@gmail.com'
-EMAIL_HOST_PASSWORD = '@#Gaurav007'
+EMAIL_HOST_USER = 'policybazaar123456@gmail.com'
+EMAIL_HOST_PASSWORD = 'mayank007'
 EMAIL_PORT = 587
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_HOST = 'smtp.gmail.com'
@@ -135,14 +135,14 @@ EMAIL_PORT = 587
 #
 #
 
-
-
-AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
-
-AWS_S3_FILE_OVERWRITE = False
-AWS_DEFAULT_ACL = None
-
-# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+#
+#
+# AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+# AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+# AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+#
+# AWS_S3_FILE_OVERWRITE = False
+# AWS_DEFAULT_ACL = None
+#
+# # DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 django_heroku.settings(locals())
