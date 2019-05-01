@@ -6,15 +6,17 @@ import django_heroku
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# SECRET_KEY = '4x79n=99v*^=(8(x0x%1oozy_6c$f+&fmct7sd4(#+ecw0tbka'
-
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False   #(os.environ.get('DEBUG_VALUE') == 'True')
+DEBUG = True   #(os.environ.get('DEBUG_VALUE') == 'True')
 
 ALLOWED_HOSTS = ['mayankblogapp.herokuapp.com']
-#
+
+
+# DEBUG = True 
+# ALLOWED_HOSTS = []
+# SECRET_KEY = '4x79n=99v*^=(8(x0x%1oozy_6c$f+&fmct7sd4(#+ecw0tbka'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
