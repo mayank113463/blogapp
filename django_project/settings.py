@@ -13,7 +13,7 @@ DEBUG = True   #(os.environ.get('DEBUG_VALUE') == 'True')
 
 ALLOWED_HOSTS = ['mayankblogapp.herokuapp.com']
 
-
+#
 # DEBUG = True
 # ALLOWED_HOSTS = []
 # SECRET_KEY = '4x79n=99v*^=(8(x0x%1oozy_6c$f+&fmct7sd4(#+ecw0tbka'
